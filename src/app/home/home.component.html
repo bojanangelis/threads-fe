@@ -1,0 +1,6 @@
+<section class="max-w-md mx-auto flex flex-col space-y-4">
+  <app-comment
+    *ngFor="let comment of comments()"
+    [comment]="comment"
+  ></app-comment>
+</section>
