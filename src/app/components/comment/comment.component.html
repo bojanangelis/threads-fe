@@ -49,7 +49,10 @@
     </button>
   </dl>
   <section class="my-4" *ngIf="isReplying()">
-    <app-comment-form></app-comment-form>
+    <app-comment-form
+      placeholder="Write your reply"
+      buttonText="Send"
+    ></app-comment-form>
   </section>
   <section class="nested-comments" *ngIf="isExpended()">
     <app-comment
